@@ -10,4 +10,10 @@ pipeline {
         }
     }
 }
+        stage('Test') {
+            steps {
+                sh './build/casino_game'
+                sh './build/test_game'
+            }
+        }
 
